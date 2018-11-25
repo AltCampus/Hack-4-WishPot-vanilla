@@ -1,6 +1,7 @@
 class Movie {
   constructor(title) {
     this.title = title;
+    this.movieList = [];
   }
 
   render(e) {
@@ -12,6 +13,7 @@ class Movie {
       e.preventDefault();
       if (e.target.classList.contains('movie-submit')) {
         let movieVal = movieName.value;
+        movie1.movieList.push(movieVal);
         if (movieVal) {
           addMovie(movieVal);
         }
