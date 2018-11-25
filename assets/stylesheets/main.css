@@ -120,7 +120,7 @@ header{
 
 /* Main section formatting*/
 
-#movie-name, #book-name{
+.movie-form, .book-form{
   display: none;
 }
 

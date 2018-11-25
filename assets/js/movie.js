@@ -7,7 +7,7 @@ class Movie {
     e.preventDefault();
     let movieName = document.querySelector('#movie-name');
     let movieForm = document.querySelector('.movie-form');
-    movieName.style.display = 'block';
+    movieForm.style.display = 'block';
     movieForm.addEventListener("click", function(e){
       e.preventDefault();
       if (e.target.classList.contains('movie-submit')) {

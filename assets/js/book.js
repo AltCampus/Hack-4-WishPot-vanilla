@@ -4,8 +4,8 @@ class Book {
   }
   render() {
     let bookName = document.querySelector('#book-name');
-    bookName.style.display = 'block';
     let bookForm = document.querySelector('.book-form');
+    bookForm.style.display = 'block';
     bookForm.addEventListener("click", function(e) {
       e.preventDefault();
       if (e.target.classList.contains('book-submit')) {
@@ -25,3 +25,16 @@ function addBook(name) {
   addBookName.textContent = name;
   bookList.appendChild(addBookName);
 }
+
+let deleteBox = document.querySelectorAll('.fa-trash-alt');
+deleteBox.forEach(v => {
+  v.addEventListener('click', deleteBook);
+})
+
+function deleteBook(e) {
+  let parentTarget = e.target.parentElement;
+  console.log(parentTarget);
+  return this.parentElement.remove();
+  console.log(e);
+}
+
