@@ -21,7 +21,14 @@ class Book {
 
 function addBook(name) {
   let bookList = document.querySelector('.book-list');
+  var bookItem = document.createElement("div");
+  bookItem.classList.add("movie-item");
+  bookItem.innerHTML = `<i class="fas fa-check-circle"></i></div>`;
   let addBookName = document.createElement('h5');
   addBookName.textContent = name;
-  bookList.appendChild(addBookName);
+  bookItem.appendChild(addBookName);
+  var fabIcon = document.createElement("i");
+  fabIcon.className = "fas fa-trash-alt";
+  bookItem.appendChild(fabIcon);
+  bookList.appendChild(bookItem);
 }
