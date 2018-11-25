@@ -5,13 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/stylesheets/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,600" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900" rel="stylesheet">
+
+
 	<title> WishPot</title>
 </head>
 <body>
 
 	<header>
 		<div class="wrapper">
-			<h2 class="header-text">WishPot</h2>
+			<h2 class="header-text"><span class="inverse-header">Wish</span><span class="header-text-part2">Pot</span></h2>
 		</div>
 	</header>
 	<div class="wrapper">
@@ -19,24 +25,43 @@
 			<div class="movie-main main-sections">
 				<div class="section-header">
 					<h3>Movies</h3>
-					<div id="movie-add" class="add-btn">btn</div>
+					<div id="movie-add" class="add-btn"><i class="fas fa-plus-circle"></i></div>
 				</div>
 				<form action="" class="movie-form">
 					<input type="text" id="movie-name">
 					<button class="movie-submit">Submit</button>
 				</form>
 				<div class="movie-list">
-					<h5>The perks of being a wallflower</h5>
-					<h5>The dark knight</h5>
-					<h5>The little prince</h5>
-					<h5>American Beauty</h5>
-					<h5>Blood diamond</h5>
+					<div class="movie-item">
+						<div class="tick-circle">
+							<i class="fas fa-check-circle"></i>
+						</div><h5>The perks of being a wallflower</h5>
+						<i class="fas fa-trash-alt"></i>
+					</div>
+					<div class="movie-item">
+						<div class="tick-circle">
+							<i class="fas fa-check-circle"></i>
+						</div><h5>The dark night</h5>
+						<i class="fas fa-trash-alt"></i>
+					</div>
+					<div class="movie-item">
+						<div class="tick-circle">
+							<i class="fas fa-check-circle"></i>
+						</div><h5>Madagascar</h5>
+						<i class="fas fa-trash-alt"></i>
+					</div>
+					<div class="movie-item">
+						<div class="tick-circle">
+							<i class="fas fa-check-circle"></i>
+						</div><h5>The perks of being a wallflower</h5>
+						<i class="fas fa-trash-alt"></i>
+					</div>
 				</div>
 			</div>
 			<div class="book-main main-sections">
 				<div class="section-header">
 					<h3>Books</h3>
-					<div id="book-add" class="add-btn">btn</div>
+					<div id="book-add" class="add-btn"><i class="fas fa-plus-circle"></i></div>
 				</div>
 				<form action="" class="book-form">
 					<input type="text" id="book-name">
