@@ -1,6 +1,7 @@
 class Movie {
   constructor(title) {
     this.title = title;
+    this.movieList = [];
   }
 
   render(e) {
@@ -25,7 +26,15 @@ class Movie {
 }
 function addMovie(name) {
   let movieName = document.querySelector('.movie-list');
+  var movieItem = document.createElement("div");
+  movieItem.classList.add("movie-item");
+  movieItem.innerHTML = `<i class="fas fa-check-circle"></i></div>`;
   let addMovieName = document.createElement('h5');
   addMovieName.textContent = name;
-  movieName.appendChild(addMovieName);
+  movieItem.appendChild(addMovieName);
+  var fabIcon = document.createElement("i");
+  fabIcon.className = "fas fa-trash-alt";
+  movieItem.appendChild(fabIcon);
+  movieName.appendChild(movieItem);
+  console.log(movieItem)
 }
