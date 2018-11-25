@@ -93,7 +93,9 @@ body{
   font-size: 16px;
   /*font-family: 'Encode Sans Expanded', sans-serif;*/
   font-family: 'Source Sans Pro', sans-serif;
-  background-image:url(assets/media/wavy-dots.png);
+  /*background:rgba(200,200,200,0.5);*/
+  background-image: url("../media/transp_bg.png");
+ 
 }
 
 header{
@@ -137,6 +139,7 @@ main{
   border-radius: 10px;
   /*padding:0 10px;*/
   border:1px solid #ddd;
+  background-color: white;
 }
 
 .main-sections>*{
@@ -179,7 +182,7 @@ main{
   text-transform: capitalize;
 }
 
-.movie-item{
+.movie-item, .book-item{
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -188,12 +191,12 @@ main{
   border-bottom: 1px solid #eee;
 }
 
-.movie-item h5{
+.movie-item h5, .book-item h5{
   padding: 0 8px;
   color:#444;
 }
 
-.movie-item:last-child{
+.movie-item:last-child, .book-item:last-child{
   border:none;
 }
 
