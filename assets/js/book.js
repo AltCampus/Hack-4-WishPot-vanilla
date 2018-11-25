@@ -21,20 +21,31 @@ class Book {
 
 function addBook(name) {
   let bookList = document.querySelector('.book-list');
+  let bookItem = document.createElement('div');
+  bookItem.classList.add("book-item");
+  bookItem.innerHTML = `
+    <div>
+      <i class="fas fa-check-circle"></i>
+    </div>
+  `;
   let addBookName = document.createElement('h5');
   addBookName.textContent = name;
-  bookList.appendChild(addBookName);
+  bookItem.appendChild(addBookName);
+  let fabIcon = document.createElement('i');
+  fabIcon.className = "fas fa-trash-alt";
+  bookItem.appendChild(fabIcon);
+  bookList.appendChild(bookItem);
+  let deleteBox = document.querySelectorAll('.fa-trash-alt');
+  deleteBox.forEach(v => {
+    v.addEventListener('click', deleteBook);
+  })
 }
-
-let deleteBox = document.querySelectorAll('.fa-trash-alt');
-deleteBox.forEach(v => {
-  v.addEventListener('click', deleteBook);
-})
+addBook();
 
 function deleteBook(e) {
-  let parentTarget = e.target.parentElement;
-  console.log(parentTarget);
-  return this.parentElement.remove();
-  console.log(e);
+  var removeItem = e.target.parentElement;
+  return e.target.parentElement.parentElement.removeChild(removeItem);
 }
+
+
 

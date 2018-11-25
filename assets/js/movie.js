@@ -25,10 +25,15 @@ class Movie {
 
 }
 function addMovie(name) {
-  let movieName = document.querySelector('.movie-list');
+  let movieListItem = document.querySelector('.movie-list');
+  let movieName = document.querySelector('.to-see-movie-list');
   var movieItem = document.createElement("div");
   movieItem.classList.add("movie-item");
-  movieItem.innerHTML = `<i class="fas fa-check-circle"></i></div>`;
+  movieItem.innerHTML = `
+    <div>
+      <i class="fas fa-check-circle"></i>
+    </div>
+  `;
   let addMovieName = document.createElement('h5');
   addMovieName.textContent = name;
   movieItem.appendChild(addMovieName);
@@ -36,5 +41,10 @@ function addMovie(name) {
   fabIcon.className = "fas fa-trash-alt";
   movieItem.appendChild(fabIcon);
   movieName.appendChild(movieItem);
+  movieListItem.prepend(movieName);
   console.log(movieItem)
+  let deleteBox = document.querySelectorAll('.fa-trash-alt');
+  deleteBox.forEach(v => {
+    v.addEventListener('click', deleteBook);
+  })
 }
