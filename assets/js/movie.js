@@ -48,3 +48,14 @@ function addMovie(name) {
     v.addEventListener('click', deleteBook);
   })
 }
+
+// let toSeeList = document.querySelectorAll('.movie-item');
+// toSeeList.forEach(v => {
+//   v.addEventListener("click", toggleDone);
+// })
+// function toggleDone(e) {
+//   if (!(e.target.classList.contains('fa-check-circle'))) return;
+//   console.log(e.target);
+//   let removeItem = e.target.parentElement.parentElement.remove();
+//   console.log(removeItem)
+// }
