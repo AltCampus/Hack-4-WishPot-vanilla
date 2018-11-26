@@ -92,8 +92,8 @@ h5{
 body{
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
-  background-image: url("../media/transp_bg.png");
- 
+  /*background-image: url("../media/transp_bg.png");*/
+  background-color: #EFF2FF; 
 }
 
 header{
@@ -192,7 +192,7 @@ main{
 }
 
 
-.movie-list{
+.movie-list, .book-list{
   text-transform: capitalize;
 }
 
@@ -230,14 +230,18 @@ main{
 }
 
 
-
 /* Input box formatting */
 
 #movie-name{
   border: 1px solid #ddd;
   height:40px;
-  width:80%;
+  width:100%;
   align-self:right;
+  font-size: 22px;
+  color:#666;
+  opacity: 0;
+  transition-property:opacity;
+  transition-duration:1s;
 }
 
 #movie-add{
@@ -246,7 +250,12 @@ main{
   transition-duration:1s;
 }
 
-/*#movie-add:hover {
+
+#toggle{
+  display: none;
+}
+
+/*#toggle:checked {
   transform: rotate(315deg);
   transition-property:transform;
   transition-duration:1s;

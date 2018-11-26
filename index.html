@@ -5,11 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/stylesheets/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=EncoSde+Sans+Expanded:300,400,600" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900" rel="stylesheet">
-
 
 	<title> WishPot</title>
 </head>
@@ -29,8 +28,9 @@
 						<input type="text" id="movie-name">
 						<button class="movie-submit">Submit</button>
 					</form>
-					<div id="movie-add" class="add-btn"><i class="fas fa-plus-circle"></i></div>
+						<div id="movie-add" class="add-btn"><i class="fas fa-plus-circle"></i></div>
 				</div>
+				<input class="head-check" type="checkbox" id="toggle">
 				<div class="movie-list">
 					<div class="to-see-movie-list">
 						<div class="movie-item">
@@ -59,7 +59,7 @@
 						</div>
 					</div>
 					<div class="completed-movie-list">
-						<h4>Completed</h4>
+						<h4>Seen</h4>
 						<div class="movie-item">
 							<div class="tick-circle">
 								<i class="fas fa-check-circle"></i>
@@ -107,9 +107,14 @@
 			</div>
 		</main>
 	</div>
+
 	<script src="assets/js/movie.js"></script>
 	<script src="assets/js/book.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<!-- CSS transitions -->
+	
+	<script src="assets/js/basic.js"></script>
 </body>
 
 </html>
