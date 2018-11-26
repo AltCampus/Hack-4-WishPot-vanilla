@@ -214,17 +214,17 @@ main{
   border:none;
 }
 
-.movie-list{
+.movie-list, .book-list{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap:50px;
 }
 
-.completed-movie-list .fa-check-circle{
+.completed-movie-list .fa-check-circle, .completed-book-list .fa-check-circle{
   text-shadow: 0px 0px 0px white;
 }
 
-.completed-movie-list h5{
+.completed-movie-list h5, .completed-book-list h5{
   text-decoration: line-through;
   color:#666;
 }
@@ -232,7 +232,7 @@ main{
 
 /* Input box formatting */
 
-#movie-name{
+#movie-name, #book-name{
   border: 1px solid #ddd;
   height:40px;
   width:100%;
@@ -244,14 +244,14 @@ main{
   transition-duration:1s;
 }
 
-#movie-add{
+#movie-add, #book-add{
   transform: rotate(0deg);
   transition-property:transform;
   transition-duration:1s;
 }
 
 
-#toggle{
+#toggle-movie, #toggle-book {
   display: none;
 }
 
@@ -261,7 +261,7 @@ main{
   transition-duration:1s;
 }*/
 
-#movie-add i{
+#movie-add i, #book-add i{
   color:dodgerblue;
   transition-property:color;
   transition-duration:1s;

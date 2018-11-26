@@ -52,7 +52,7 @@
 
 				<!-- Checkbox for state management  --> 
 
-				<input class="head-check" type="checkbox" id="toggle"> 
+				<input class="head-check" type="checkbox" id="toggle-movie"> 
 
 				<!-- Movie list - Overall -->
 
@@ -119,40 +119,72 @@
 
 					<h3>Books</h3>
 					
+					<form action="" class="book-form">  <!-- Input section - book entry -->   
+						<input type="text" id="book-name">
+						<button class="book-submit">Submit</button>
+					</form>
+
+					<!-- book add button -->
+
 					<div id="book-add" class="add-btn">
 						<i class="fas fa-plus-circle"></i>
 					</div>
 
 				</div>
-				<form action="" class="book-form">
-					<input type="text" id="book-name">
-					<button class="book-submit">Submit</button>
-				</form>
+
+				<!-- Checkbox for state management  --> 
+
+				<input class="head-check" type="checkbox" id="toggle-book"> 
+
+				<!-- Book list -->
+
 				<div class="book-list">
-					<div class="book-item">
-						<div class="tick-circle">
-							<i class="fas fa-check-circle"></i>
-						</div><h5>The perks of being a wallflower</h5>
-						<i class="fas fa-trash-alt"></i>
+
+					<!-- To complete book list -->
+
+					<div class="to-see-book-list">
+
+						<div class="book-item">
+							<div class="tick-circle">
+								<i class="fas fa-check-circle"></i>
+							</div><h5>The perks of being a wallflower</h5>
+							<i class="fas fa-trash-alt"></i>
+						</div>
+						<div class="book-item">
+							<div class="tick-circle">
+								<i class="fas fa-check-circle"></i>
+							</div><h5>The dark night</h5>
+							<i class="fas fa-trash-alt"></i>
+						</div>
+						<div class="book-item">
+							<div class="tick-circle">
+								<i class="fas fa-check-circle"></i>
+							</div><h5>Madagascar</h5>
+							<i class="fas fa-trash-alt"></i>
+						</div>
+						<div class="book-item">
+							<div class="tick-circle">
+								<i class="fas fa-check-circle"></i>
+							</div><h5>The perks of being a wallflower</h5>
+							<i class="fas fa-trash-alt"></i>
+						</div>
 					</div>
-					<div class="book-item">
-						<div class="tick-circle">
-							<i class="fas fa-check-circle"></i>
-						</div><h5>The dark night</h5>
-						<i class="fas fa-trash-alt"></i>
+					
+					<!-- Completed book list -->
+					
+					<div class="completed-book-list">
+						
+						<h4>Read</h4>
+
+						<div class="book-item">
+							<div class="tick-circle">
+								<i class="fas fa-check-circle"></i>
+							</div><h5>The perks of being a wallflower</h5>
+							<i class="fas fa-arrow-up"></i>
+						</div>
+						
 					</div>
-					<div class="book-item">
-						<div class="tick-circle">
-							<i class="fas fa-check-circle"></i>
-						</div><h5>Madagascar</h5>
-						<i class="fas fa-trash-alt"></i>
-					</div>
-					<div class="book-item">
-						<div class="tick-circle">
-							<i class="fas fa-check-circle"></i>
-						</div><h5>The perks of being a wallflower</h5>
-						<i class="fas fa-trash-alt"></i>
-					</div>
+
 				</div>
 			</div>
 		</main>
