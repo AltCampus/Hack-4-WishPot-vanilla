@@ -14,65 +14,115 @@
 </head>
 <body>
 
+	<!-- Header section -->
+
 	<header>
 		<div class="wrapper">
 			<h2 class="header-text"><span class="inverse-header">Wish</span><span class="header-text-part2">Pot</span></h2>
 		</div>
 	</header>
+
+	<!-- Main section -->
+
 	<div class="wrapper">
 		<main>
+
+			<!-- Movie section -->
+
 			<div class="movie-main main-sections">
+
+				<!-- Section header -->
+
 				<div class="section-header">
+					
 					<h3>Movies</h3>
-					<form action="" class="movie-form">
+
+					<form action="" class="movie-form">  <!-- Input section - movie entry -->   
 						<input type="text" id="movie-name">
 						<button class="movie-submit">Submit</button>
 					</form>
-						<div id="movie-add" class="add-btn"><i class="fas fa-plus-circle"></i></div>
+
+					<!-- Movie add button -->
+
+					<div id="movie-add" class="add-btn">
+						<i class="fas fa-plus-circle"></i>
+					</div>
+
 				</div>
-				<input class="head-check" type="checkbox" id="toggle">
+
+				<!-- Checkbox for state management  --> 
+
+				<input class="head-check" type="checkbox" id="toggle"> 
+
+				<!-- Movie list - Overall -->
+
 				<div class="movie-list">
+
+					<!-- To see movie list -->
+
 					<div class="to-see-movie-list">
-						<div class="movie-item">
+
+						<div class="movie-item"> <!-- Individual movie item -->
 							<div class="tick-circle">
 								<i class="fas fa-check-circle"></i>
 							</div><h5>The perks of being a wallflower</h5>
 							<i class="fas fa-trash-alt"></i>
 						</div>
+						
 						<div class="movie-item">
 							<div class="tick-circle">
 								<i class="fas fa-check-circle"></i>
 							</div><h5>The dark night</h5>
 							<i class="fas fa-trash-alt"></i>
 						</div>
+						
 						<div class="movie-item">
 							<div class="tick-circle">
 								<i class="fas fa-check-circle"></i>
 							</div><h5>Madagascar</h5>
 							<i class="fas fa-trash-alt"></i>
 						</div>
+						
 						<div class="movie-item">
 							<div class="tick-circle">
 								<i class="fas fa-check-circle"></i>
 							</div><h5>The perks of being a wallflower</h5>
 							<i class="fas fa-trash-alt"></i>
 						</div>
+
 					</div>
+
+					<!-- Completed movie list -->
+
 					<div class="completed-movie-list">
+
 						<h4>Seen</h4>
-						<div class="movie-item">
+
+						<div class="movie-item">  <!-- Individual movie item -->
 							<div class="tick-circle">
 								<i class="fas fa-check-circle"></i>
 							</div><h5>The perks of being a wallflower</h5>
 							<i class="fas fa-arrow-up"></i>
 						</div>
+
 					</div>
 				</div>
 			</div>
+
+			<!-- Start of book section -->
+
 			<div class="book-main main-sections">
+
+				<!-- Section header -->
+
 				<div class="section-header">
+
 					<h3>Books</h3>
-					<div id="book-add" class="add-btn"><i class="fas fa-plus-circle"></i></div>
+					
+					<div id="book-add" class="add-btn">
+						<i class="fas fa-plus-circle"></i>
+					</div>
+
 				</div>
 				<form action="" class="book-form">
 					<input type="text" id="book-name">
@@ -112,7 +162,7 @@
 	<script src="assets/js/book.js"></script>
 	<script src="assets/js/main.js"></script>
 
-	<!-- CSS transitions -->
+	<!-- JS script for CSS transitions -->
 	
 	<script src="assets/js/basic.js"></script>
 </body>
