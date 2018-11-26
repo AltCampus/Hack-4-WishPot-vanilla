@@ -124,7 +124,6 @@ header{
   display: none;
 }
 
-
 main{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -144,6 +143,8 @@ main{
 .main-sections>*{
   padding:10px 20px;
 }
+
+/* Section header formatting */
 
 .section-header{
   /*background-color: tomato;*/
@@ -168,11 +169,14 @@ main{
   display:none;
 }
 
+/* Add button formatting */
 
 .add-btn .fas{
   color:dodgerblue;
   font-size: 40px;
 }
+
+/* Done and Delete Icons formatting  */
 
 .fa-check-circle{
   color:white;
@@ -191,6 +195,7 @@ main{
   font-size: 20px;
 }
 
+/* Movie/Book list and item formatting */
 
 .movie-list, .book-list{
   text-transform: capitalize;
@@ -220,7 +225,8 @@ main{
   grid-gap:50px;
 }
 
-.completed-movie-list .fa-check-circle, .completed-book-list .fa-check-circle{
+.completed-movie-list i, .completed-book-list i{
+  color:#bbb;
   text-shadow: 0px 0px 0px white;
 }
 
@@ -255,23 +261,12 @@ main{
   display: none;
 }
 
-/*#toggle:checked {
-  transform: rotate(315deg);
-  transition-property:transform;
-  transition-duration:1s;
-}*/
 
 #movie-add i, #book-add i{
   color:dodgerblue;
   transition-property:color;
   transition-duration:1s;
 }
-
-/*#movie-add:hover > i{
-  color:tomato;
-  transition-property:color;
-  transition-duration:1s;
-}*/
 
 
 
